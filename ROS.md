@@ -63,7 +63,8 @@ Server/Client는 양방향 메시지 요청(request)/응답(response) 방식의 
 ### 3. 개발의 편의를 위한 툴
 * command line tool : GUI없는 ROS command
 * Rviz
-* rqt
+* Rqt
+* Gazebo
 
 ## 🎮ROS의 특징
 1. 분산 프로세스 : 프로세스가 독립적으로 실행되면서 유기적으로 데이터를 주고 받을 수 있다.
