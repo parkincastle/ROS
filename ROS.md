@@ -31,20 +31,34 @@ ROS는 노드를 통해 topic혹은 service를 이용하여 데이터를 통신�
 > **Topic (Publisher/Subscriber)**
 
 Pubilsh/Subscribe는 단방향 메시지 송수신 방식의 topic을 사용한다.
-1. CMakeLists.txt File 수정
-2. Msg파일 작성
-3. Publisher 노드 작성
-4. Subscrider 노드 생성
+
+* 단방향, 비동기 통신
+* 퍼블리셔(publisher) : 메세지 송신
+* 서브스크라이버(scbscriber) : 메세지 수신에 이용
+* 지속적으로 발생하는 센서 데이터에 적합
+* 1:n, 1:1, n:1, n:n 전부 통신 가능
+> 1. CMakeLists.txt File 수정
+> 2. Msg파일 작성
+> 3. Publisher 노드 작성
+> 4. Subscrider 노드 생성
    
-> Service (Server/Client)
+> **Service (Server/Client)**
 
 Server/Client는 양방향 메시지 요청(request)/응답(response) 방식의 service를 사용한다.
-1. CMakeLists.txt File 수정
-2. Srv파일 작성
-3. Service 노드 생성
-4. Client 노드 생성
 
-> Roslaunch
+* 양방향, 동기 통신
+* 서비스 서버, 서비스 클라이언트간 통신
+* 클라이언트 요청이 있을때 만 서버에서 응담
+* 요청과 응답이 끊기면 노드 접속 끊김
+> 1. CMakeLists.txt File 수정
+> 2. Srv파일 작성
+> 3. Service 노드 생성
+> 4. Client 노드 생성
+
+
+> **action**
+
+> **Roslaunch**
 
 * 로봇은 하나의 노드만으로 이루어져 있지않고, 다량의 노드들의 통신으로 이루어져있다.
 * 그런 다량의 노드들을 일일히 실행해야하는 수고로움을 덜어주기 위해서 생긴 방법이 roslaunch다.
