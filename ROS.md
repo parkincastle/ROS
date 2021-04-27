@@ -28,7 +28,9 @@ ROS는 위에서 말했듯이 서로 다른 운영체제에서 사용할 수 있
 ### 1. 통신기능
 ROS는 노드를 통해 topic혹은 service를 이용하여 데이터를 통신한다.
 
-#### **Topic (Publisher/Subscriber)**
+### **Topic (Publisher/Subscriber)**
+
+<img src = "ROS_topic.png" width = "70%">
 
 Pubilsh/Subscribe는 단방향 메시지 송수신 방식의 topic을 사용한다.
 
@@ -44,6 +46,8 @@ Pubilsh/Subscribe는 단방향 메시지 송수신 방식의 topic을 사용한�
    
 #### **Service (Server/Client)**
 
+<img src = "ROS_service.png" width = "72%">
+
 Server/Client는 양방향 메시지 요청(request)/응답(response) 방식의 service를 사용한다.
 
 * 양방향, 동기 통신
@@ -56,7 +60,14 @@ Server/Client는 양방향 메시지 요청(request)/응답(response) 방식의 
 > 4. Client 노드 생성
 
 
-#### **action**
+#### **action (Goal, Feed, Result)**
+
+<img src = "ROS_action.png" width = "70%">
+
+* 양방향, 비동기 통신
+* 요청 중간 피드백이 필요한 경우 사용
+* 해당 되는 못표 Goal과 결과 Result 피드백 Feedback
+* 메세지 전송 방식 자체는 비동기식인 토픽과 동일
 
 > **Roslaunch**
 
@@ -85,6 +96,6 @@ Server/Client는 양방향 메시지 요청(request)/응답(response) 방식의 
 2.  패키지 단위 관리 : 같은 작업을 수행하는 여러개의 프로세스를 채키지 단위로 관리가능하여 개발 또는 사용이 편리하고 배포, 공유, 수정에 용이하다.
 3.  공개 리포지토리 : 개발자는 Github등에 프로젝트를 공개하고 라이센스를 밣히게 되어 있다.
 4.  API형태 : API를 불러오고 적용하는 것이 가능하다.
-5.  언어의 자율성성 : Python, C++ Lisp, Java, C#, Lua, Ruby등 다양한 언어를 지원한다.
+5.  언어의 자성성 : Python, C++ Lisp, Java, C#, Lua, Ruby등 다양한 언어를 지원한다.
 6.  대규모 실행 : ROS는 대규모 시스템 및 개발 프로세스에 적용 가능하다.
 7.  쉬운 테스트 : ROS는 rostest라고 하는 단위/통합 테스트 프레임웍 기반 위에 있는데, 설치 및 제거가 아주 쉽다.
