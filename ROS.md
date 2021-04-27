@@ -28,7 +28,7 @@ ROS는 위에서 말했듯이 서로 다른 운영체제에서 사용할 수 있
 ### 1. 통신기능
 ROS는 노드를 통해 topic혹은 service를 이용하여 데이터를 통신한다.
 
-> **Topic (Publisher/Subscriber)**
+#### **Topic (Publisher/Subscriber)**
 
 Pubilsh/Subscribe는 단방향 메시지 송수신 방식의 topic을 사용한다.
 
@@ -42,7 +42,7 @@ Pubilsh/Subscribe는 단방향 메시지 송수신 방식의 topic을 사용한�
 > 3. Publisher 노드 작성
 > 4. Subscrider 노드 생성
    
-> **Service (Server/Client)**
+#### **Service (Server/Client)**
 
 Server/Client는 양방향 메시지 요청(request)/응답(response) 방식의 service를 사용한다.
 
@@ -56,7 +56,7 @@ Server/Client는 양방향 메시지 요청(request)/응답(response) 방식의 
 > 4. Client 노드 생성
 
 
-> **action**
+#### **action**
 
 > **Roslaunch**
 
